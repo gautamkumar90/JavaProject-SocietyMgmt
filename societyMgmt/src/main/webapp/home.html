@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+	#frm{
+		width: 550px;
+		margin:auto;
+		margin-top:60px;
+		align-items: stretch;
+	}
+	marquee{
+     margin-top:10px;
+  }
+   body {
+            background-image: url('https://images.unsplash.com/photo-1710162734135-8dc148f53abe?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover; /* Makes the image cover the entire page */
+            background-repeat: no-repeat; /* Prevents tiling */
+            background-position: center; /* Centers the image */
+        }
+</style>
+</head>
+<body 
+	class="container-fluid">
+	<h1 align="center" style="color : blue; font-weight: bold; font-style: italic;">ABCD Co-operative Housing Society</h1>
+	<marquee><h2 class="text-primary">No ENTRY without registration.</h2></marquee>
+	<form action="register" method="post" class="form card" id="frm">
+		<h2 class="bg-danger text-white card-header">New Member Registration Form</h2>
+		<table class="table table-hover">
+		<tr>
+		<td>Name</td>
+		<td><input type="text" name="username"required></td>
+		</tr>
+		<tr>
+		<td>Email</td>
+		<td><input type="email" name="email" required></td>
+		</tr>
+		<tr>
+		<td>Mobile</td>
+		<td><input type="text" name="mobile" required></td>
+		</tr>
+		<tr>
+		<td>DOB</td>
+		<td><input type="date" name="dob" required></td>
+		</tr>
+		<tr>
+		<td>Designation</td>
+		<td><select name="designation">
+			<option value="Resident only">Resident only</option>
+			<option value="Committee Member">Committee Member</option>
+			<option value="Resident (tenants)">Resident (tenants)</option>	
+			<option value="Staff Member">Staff Member</option>
+		</select></td>
+		</tr>
+		
+		<tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="male">Male &nbsp;
+            <input type="radio" name="gender" value="female">Female
+        </td>
+        </tr>
+        
+        <td>Number of Members</td>
+		<td><select name="members">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>	
+			<option value="4">4</option>
+			<option value="More than 4">More than 4</option>
+		</select></td>
+		</tr>
+		
+		<tr class="card-footer">
+		<td><button type="submit" class="btn btn-outline-success">Register</button></td>
+       	<td><button type="reset" class="btn btn-outline-danger">Cancel</button></td>
+       	</tr>
+       	</table>
+       	<button class="btn btn-outline-success d-block"><a href="showdata">Show Users</a></button>
+	</form>
+</body>
+</html>
